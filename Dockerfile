@@ -7,5 +7,5 @@ EXPOSE 25565
 WORKDIR /minecraft
 VOLUME ["/minecraft"]
 
-ENTRYPOINT ["java", "-jar", "minecraft.jar", "nogui"]
-CMD ["-Xmx1536M", "-Xms768M"]
+ENTRYPOINT ["java"]
+CMD ["-Xmx1536M", "-Xms768M", "-jar", "minecraft.jar", "nogui"]
