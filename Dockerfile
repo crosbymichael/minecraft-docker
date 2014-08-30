@@ -1,7 +1,7 @@
 FROM crosbymichael/java
 
-ADD https://s3.amazonaws.com/Minecraft.Download/versions/1.7.9/minecraft_server.1.7.9.jar /minecraft.jar 
-RUN chown 1:1 /minecraft.jar
+ADD https://s3.amazonaws.com/Minecraft.Download/versions/1.7.10/minecraft_server.1.7.10.jar /minecraft.jar 
+RUN chown 1:1 /minecraft.jar && mkdir /minecraft && chown 1:1 /minecraft
 
 EXPOSE 25565
 WORKDIR /minecraft
