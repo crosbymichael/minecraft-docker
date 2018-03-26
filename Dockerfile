@@ -1,4 +1,4 @@
-FROM crosbymichael/java
+FROM java
 
 ADD https://launcher.mojang.com/mc/game/1.12.2/server/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar /minecraft.jar 
 RUN chown 1:1 /minecraft.jar && mkdir /minecraft && chown 1:1 /minecraft
